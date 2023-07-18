@@ -1,0 +1,22 @@
+2023-07-18 02:32:47,995 INFO Connection with db-server successful
+2023-07-18 02:38:08,214 INFO Connection with db-server successful
+2023-07-18 02:38:08,215 ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'EXIST Notes' at line 1
+2023-07-18 02:39:22,228 INFO Connection with db-server successful
+2023-07-18 02:39:22,238 INFO Database named Notes was created successful
+2023-07-18 02:39:53,621 INFO Connection with db-server successful
+2023-07-18 02:39:53,629 INFO Database named 'Notes' was created successful
+2023-07-18 03:03:31,695 INFO Connection with db-server successful
+2023-07-18 03:03:46,736 INFO Connection with db-server successful
+2023-07-18 03:03:46,743 INFO Database named 'Notes' was created successful
+2023-07-18 03:04:41,231 INFO Connection with db-server successful
+2023-07-18 03:04:41,239 INFO Database named 'Notes' was created successful
+2023-07-18 03:04:41,240 ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id SERIAL,header VARCHAR(100),body TEXT)' at line 1
+2023-07-18 03:06:11,333 INFO Connection with db-server successful
+2023-07-18 03:06:11,336 INFO Database named 'Notes' was created successful
+2023-07-18 03:06:11,336 ERROR 1046 (3D000): No database selected
+2023-07-18 03:09:29,461 INFO Connection with db-server successful
+2023-07-18 03:09:29,470 INFO Database named 'Notes' was created successful
+2023-07-18 03:09:29,470 ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TABLE IF NOT EXISTS Notes_table(date_of_creation VARCHAR(30),id SERIAL,header VA' at line 1
+2023-07-18 03:09:49,059 INFO Connection with db-server successful
+2023-07-18 03:09:49,066 INFO Database named 'Notes' was created successful
+2023-07-18 03:09:49,067 INFO Table named 'Notes_table' was created successful
