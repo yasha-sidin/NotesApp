@@ -4,18 +4,13 @@ from Model.Note import *
 import mysql.connector
 import logging
 
-node = Note(1, "Test1", "NJNHYGUYBBIIUHHIBIUBUI")
-print(Note.getid(node), Note.getheader(node), Note.getbody(node))
-
-node1 = Note(2, "Test2", "NJNHYGvvvvvvvvvvvvvvvvvvvI")
-print(Note.getid(node1), Note.getheader(node1), Note.getbody(node1), Note.getdate_of_creation(node1))
-
 logger = Logger("applogs")
 
 db = DbModel("localhost", "root", "131214", logger)
-db.init_connection()
-db.create_notesdb("Notes")
-db.create_notestable("Notes_table")
+db.create_db("notes_data")
+note1 = Note(0, "My life", "Hello World!!! I am here.")
+db.insert_into_table("notes_table", note1)
+
 
 
 

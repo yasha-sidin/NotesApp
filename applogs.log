@@ -20,3 +20,398 @@
 2023-07-18 03:09:49,059 INFO Connection with db-server successful
 2023-07-18 03:09:49,066 INFO Database named 'Notes' was created successful
 2023-07-18 03:09:49,067 INFO Table named 'Notes_table' was created successful
+2023-07-18 22:16:25,960 INFO Connection with db-server successful
+2023-07-18 22:16:25,965 INFO Database named 'Notes' was created successful
+2023-07-18 22:16:25,965 INFO Table named 'Notes_table' was created successful
+2023-07-19 00:19:05,420 INFO Connection with db-server successful
+2023-07-19 00:19:19,385 INFO Connection with db-server successful
+2023-07-19 00:19:19,388 INFO Database named 'Notes' was created successful
+2023-07-19 00:19:19,389 ERROR Commands out of sync; you can't run this command now
+2023-07-19 00:20:37,323 INFO Connection with db-server successful
+2023-07-19 00:20:37,325 INFO Database named 'Notes' was created successful
+2023-07-19 00:20:37,325 ERROR Commands out of sync; you can't run this command now
+2023-07-19 00:21:11,820 INFO Connection with db-server successful
+2023-07-19 00:21:11,822 INFO Database named 'Notes' was created successful
+2023-07-19 00:21:11,822 INFO Table named 'Notes_table' was created successful
+2023-07-19 00:21:24,738 INFO Connection with db-server successful
+2023-07-19 00:21:24,740 INFO Database named 'Notes' was created successful
+2023-07-19 00:21:24,740 INFO Table named 'Notes_table' was created successful
+2023-07-19 00:22:14,776 INFO Connection with db-server successful
+2023-07-19 00:22:14,778 INFO Database named 'Notes' was created successful
+2023-07-19 00:22:14,778 INFO This table 'Notes_table' doesn't exist
+2023-07-19 00:23:13,658 INFO Connection with db-server successful
+2023-07-19 00:23:13,660 INFO Database named 'notes' was created successful
+2023-07-19 00:23:13,660 INFO This table 'notes_table' doesn't exist
+2023-07-19 00:29:00,926 INFO Connection with db-server successful
+2023-07-19 00:29:00,929 INFO Database named 'notes' was created successful
+2023-07-19 00:29:00,929 INFO This table 'notes_table' doesn't exist
+2023-07-19 00:29:39,795 INFO Connection with db-server successful
+2023-07-19 00:29:39,796 INFO Database named 'notes' was created successful
+2023-07-19 00:29:39,797 INFO This table 'notes_table' doesn't exist
+2023-07-19 00:32:10,604 INFO Connection with db-server successful
+2023-07-19 00:32:10,606 INFO Database named 'notes' was created successful
+2023-07-19 00:32:10,607 ERROR Commands out of sync; you can't run this command now
+2023-07-19 00:32:38,581 INFO Connection with db-server successful
+2023-07-19 00:32:38,582 INFO Database named 'notes' was created successful
+2023-07-19 00:32:38,583 INFO This table 'notes_table' doesn't exist
+2023-07-19 00:34:59,919 INFO Connection with db-server successful
+2023-07-19 00:34:59,922 INFO Database named 'notes' was created successful
+2023-07-19 00:34:59,924 INFO Database named 'notes_table' was created successful
+2023-07-19 00:34:59,924 INFO This table 'notes_table' doesn't exist
+2023-07-19 00:35:47,156 INFO Connection with db-server successful
+2023-07-19 00:35:47,157 INFO Database named 'notes' was created successful
+2023-07-19 00:35:47,157 INFO Table named 'notes_table' was created successful
+2023-07-19 00:35:47,157 ERROR MySQL Connection not available.
+2023-07-19 00:36:51,715 INFO Connection with db-server successful
+2023-07-19 00:36:51,716 INFO Database named 'notes' was created successful
+2023-07-19 00:36:51,716 INFO This table 'notes_table' exist
+2023-07-19 00:41:28,449 INFO Connection with db-server successful
+2023-07-19 00:41:28,451 INFO Database named 'notes' was created successful
+2023-07-19 00:41:28,451 INFO Table named 'notes_table' was created successful
+2023-07-19 00:41:28,451 ERROR MySQL Connection not available.
+2023-07-19 00:49:39,162 ERROR 'NoneType' object has no attribute 'cursor'
+2023-07-19 00:49:39,162 ERROR 'NoneType' object has no attribute 'cursor'
+2023-07-19 00:49:39,163 INFO This table 'notes_table' doesn't exist
+2023-07-19 00:50:28,072 ERROR 'NoneType' object has no attribute 'cursor'
+2023-07-19 00:50:28,072 ERROR 'NoneType' object has no attribute 'cursor'
+2023-07-19 00:50:28,072 INFO This table 'notes_table' doesn't exist
+2023-07-19 00:58:25,671 ERROR 'property' object has no attribute 'cursor'
+2023-07-19 00:58:25,671 ERROR 'property' object has no attribute 'cursor'
+2023-07-19 00:58:25,671 INFO This table 'notes_table' doesn't exist
+2023-07-19 01:00:18,751 ERROR 'DbModel' object has no attribute '_connection'
+2023-07-19 01:00:18,751 ERROR 'NoneType' object has no attribute 'cursor'
+2023-07-19 01:00:18,758 ERROR 'DbModel' object has no attribute '_connection'
+2023-07-19 01:00:18,758 ERROR 'NoneType' object has no attribute 'cursor'
+2023-07-19 01:00:18,763 ERROR 'DbModel' object has no attribute '_connection'
+2023-07-19 01:00:18,763 INFO This table 'notes_table' doesn't exist
+2023-07-19 01:01:27,002 INFO Connection with db-server successful
+2023-07-19 01:01:27,003 INFO Database named 'notes' was created successful
+2023-07-19 01:01:27,022 INFO Connection with db-server successful
+2023-07-19 01:01:27,022 INFO This table 'notes_table' exist
+2023-07-19 01:01:27,051 INFO Connection with db-server successful
+2023-07-19 01:01:27,052 ERROR Commands out of sync; you can't run this command now
+2023-07-19 01:02:41,149 INFO Connection with db-server successful
+2023-07-19 01:02:41,151 INFO Database named 'notes' was created successful
+2023-07-19 01:02:41,171 INFO Connection with db-server successful
+2023-07-19 01:02:41,172 INFO This table 'notes_table' doesn't exist
+2023-07-19 01:03:46,613 INFO Connection with db-server successful
+2023-07-19 01:03:46,615 INFO Database named 'notes' was created successful
+2023-07-19 01:04:31,552 INFO Connection with db-server successful
+2023-07-19 01:04:31,553 INFO Database named 'notes' was created successful
+2023-07-19 01:04:31,576 INFO Connection with db-server successful
+2023-07-19 01:04:31,576 ERROR Commands out of sync; you can't run this command now
+2023-07-19 01:05:14,303 INFO Connection with db-server successful
+2023-07-19 01:05:14,305 INFO Database named 'notes' was created successful
+2023-07-19 01:05:14,324 INFO Connection with db-server successful
+2023-07-19 01:05:14,324 INFO This table 'notes_table' exist
+2023-07-19 01:06:11,308 INFO Connection with db-server successful
+2023-07-19 01:06:11,310 INFO Database named 'notes' was created successful
+2023-07-19 01:06:11,327 INFO Connection with db-server successful
+2023-07-19 01:06:37,566 INFO Connection with db-server successful
+2023-07-19 01:06:37,567 INFO Database named 'notes' was created successful
+2023-07-19 01:06:37,593 INFO Connection with db-server successful
+2023-07-19 01:06:37,593 INFO This table 'notes_table' doesn't exist
+2023-07-19 01:07:25,368 INFO Connection with db-server successful
+2023-07-19 01:07:25,369 INFO Database named 'notes' was created successful
+2023-07-19 01:07:25,398 INFO Connection with db-server successful
+2023-07-19 01:07:25,399 INFO Table named 'notes_table' was created successful
+2023-07-19 01:07:36,085 INFO Connection with db-server successful
+2023-07-19 01:07:36,086 INFO Database named 'notes' was created successful
+2023-07-19 01:07:36,104 INFO Connection with db-server successful
+2023-07-19 01:07:36,105 INFO Table named 'notes_table' was dropped successful
+2023-07-19 01:09:48,456 ERROR 'property' object has no attribute 'cursor'
+2023-07-19 01:09:48,456 ERROR 'property' object has no attribute 'cursor'
+2023-07-19 01:16:39,246 INFO Connection with db-server successful
+2023-07-19 01:16:39,249 INFO Database named 'notes_data' was created successful
+2023-07-19 01:16:39,268 INFO Connection with db-server successful
+2023-07-19 01:16:39,269 INFO Table named 'notes_table' was created successful
+2023-07-19 01:17:41,758 INFO Connection with db-server successful
+2023-07-19 01:17:41,760 INFO Database named 'notes_data' was created successful
+2023-07-19 01:17:41,778 INFO Connection with db-server successful
+2023-07-19 01:17:41,778 INFO This table 'notes_table' exist
+2023-07-19 01:19:54,456 INFO Connection with db-server successful
+2023-07-19 01:19:54,458 INFO Database named 'notes_data' was created successful
+2023-07-19 01:19:54,477 INFO Connection with db-server successful
+2023-07-19 01:19:54,477 INFO This table 'notes_table' exist
+2023-07-19 01:19:54,496 INFO Connection with db-server successful
+2023-07-19 01:19:54,497 ERROR Commands out of sync; you can't run this command now
+2023-07-19 01:20:38,285 INFO Connection with db-server successful
+2023-07-19 01:20:38,287 INFO Database named 'notes_data' was created successful
+2023-07-19 01:20:38,306 INFO Connection with db-server successful
+2023-07-19 01:20:38,306 INFO This table 'notes_table' exist
+2023-07-19 01:20:38,325 INFO Connection with db-server successful
+2023-07-19 01:20:38,325 INFO Inserting into table 'notes_table' was successful
+2023-07-19 01:24:55,492 INFO Connection with db-server successful
+2023-07-19 01:24:55,494 INFO Database named 'notes_data' was created successful
+2023-07-19 01:24:55,513 INFO Connection with db-server successful
+2023-07-19 01:24:55,514 INFO Table named 'notes_table' was dropped successful
+2023-07-19 01:24:55,532 INFO Connection with db-server successful
+2023-07-19 01:24:55,533 INFO This table 'notes_table' exist
+2023-07-19 01:24:55,553 INFO Connection with db-server successful
+2023-07-19 01:24:55,554 INFO Inserting into table 'notes_table' was successful
+2023-07-19 01:28:34,403 INFO Connection with db-server successful
+2023-07-19 01:28:34,405 INFO Database named 'notes_data' was created successful
+2023-07-19 01:28:34,424 INFO Connection with db-server successful
+2023-07-19 01:28:34,424 INFO This table 'notes_table' doesn't exist
+2023-07-19 01:28:34,446 INFO Connection with db-server successful
+2023-07-19 01:28:34,447 INFO Table named 'notes_table' was created successful
+2023-07-19 01:28:34,468 INFO Connection with db-server successful
+2023-07-19 01:28:34,469 INFO This table 'notes_table' doesn't exist
+2023-07-19 01:30:47,192 INFO Connection with db-server successful
+2023-07-19 01:30:47,194 INFO Database named 'notes_data' was created successful
+2023-07-19 01:30:47,214 INFO Connection with db-server successful
+2023-07-19 01:30:47,215 INFO Table named 'notes_table' was dropped successful
+2023-07-19 01:30:47,237 INFO Connection with db-server successful
+2023-07-19 01:30:47,238 INFO Table named 'notes_table' was created successful
+2023-07-19 01:30:47,269 INFO Connection with db-server successful
+2023-07-19 01:30:47,269 INFO This table 'notes_table' doesn't exist
+2023-07-19 01:33:56,601 INFO Connection with db-server successful
+2023-07-19 01:33:56,603 INFO Database named 'notes_data' was created successful
+2023-07-19 01:33:56,628 INFO Connection with db-server successful
+2023-07-19 01:33:56,629 INFO Table named 'notes_table' was dropped successful
+2023-07-19 01:33:56,651 INFO Connection with db-server successful
+2023-07-19 01:33:56,652 INFO Table named 'notes_table' was created successful
+2023-07-19 01:33:56,677 INFO Connection with db-server successful
+2023-07-19 01:33:56,678 INFO This table 'notes_table' doesn't exist
+2023-07-19 01:34:22,791 INFO Connection with db-server successful
+2023-07-19 01:34:22,793 INFO Database named 'notes_data' was created successful
+2023-07-19 01:34:22,815 INFO Connection with db-server successful
+2023-07-19 01:34:22,816 INFO Table named 'notes_table' was dropped successful
+2023-07-19 01:34:22,838 INFO Connection with db-server successful
+2023-07-19 01:34:22,839 INFO Table named 'notes_table' was created successful
+2023-07-19 01:34:22,862 INFO Connection with db-server successful
+2023-07-19 01:34:22,862 INFO This table 'notes_table' doesn't exist
+2023-07-19 01:38:16,119 INFO Connection with db-server is successful
+2023-07-19 01:38:16,121 INFO Database named 'notes_data' was created successful
+2023-07-19 01:38:16,141 INFO Connection with db-server is successful
+2023-07-19 01:38:16,142 INFO Table named 'notes_table' was dropped successful
+2023-07-19 01:38:16,172 INFO Connection with db-server is successful
+2023-07-19 01:38:16,173 INFO Table named 'notes_table' was created successful
+2023-07-19 01:38:16,196 INFO Connection with db-server is successful
+2023-07-19 01:38:16,196 INFO This table 'notes_table' doesn't exist
+2023-07-19 01:38:53,615 INFO Connection with db-server is successful
+2023-07-19 01:38:53,617 INFO Database named 'notes_data' was created successful
+2023-07-19 01:38:53,644 INFO Connection with db-server is successful
+2023-07-19 01:38:53,644 INFO Table named 'notes_table' was dropped successful
+2023-07-19 01:38:53,669 INFO Connection with db-server is successful
+2023-07-19 01:38:53,670 INFO Table named 'notes_table' was created successful
+2023-07-19 01:38:53,699 INFO Connection with db-server is successful
+2023-07-19 01:38:53,703 INFO This table 'notes_table' doesn't exist
+2023-07-19 01:42:05,756 INFO Connection with db-server is successful
+2023-07-19 01:42:05,758 INFO Database named 'notes_data' was created successful
+2023-07-19 01:42:05,780 INFO Connection with db-server is successful
+2023-07-19 01:42:05,782 INFO Table named 'notes_table' was dropped successful
+2023-07-19 01:42:05,803 INFO Connection with db-server is successful
+2023-07-19 01:42:05,803 INFO Table named 'notes_table' was created successful
+2023-07-19 01:42:05,826 INFO Connection with db-server is successful
+2023-07-19 01:42:05,830 INFO This table 'notes_table' doesn't exist
+2023-07-19 01:43:03,787 INFO Connection with db-server is successful
+2023-07-19 01:43:03,789 INFO Database named 'notes_data' was created successful
+2023-07-19 01:43:03,807 INFO Connection with db-server is successful
+2023-07-19 01:43:03,807 INFO Table named 'notes_table' was dropped successful
+2023-07-19 01:43:03,826 INFO Connection with db-server is successful
+2023-07-19 01:43:03,827 INFO Table named 'notes_table' was created successful
+2023-07-19 01:43:03,848 INFO Connection with db-server is successful
+2023-07-19 01:43:03,849 INFO This table 'notes_table' doesn't exist
+2023-07-19 01:44:06,411 INFO Connection with db-server is successful
+2023-07-19 01:44:06,412 INFO Database named 'notes_data' was created successful
+2023-07-19 01:44:06,431 INFO Connection with db-server is successful
+2023-07-19 01:44:06,432 INFO Table named 'notes_table' was dropped successful
+2023-07-19 01:44:06,451 INFO Connection with db-server is successful
+2023-07-19 01:44:06,451 INFO Table named 'notes_table' was created successful
+2023-07-19 01:44:06,471 INFO Connection with db-server is successful
+2023-07-19 01:44:06,474 INFO This table 'notes_table' doesn't exist
+2023-07-19 01:44:22,391 INFO Connection with db-server is successful
+2023-07-19 01:44:22,394 INFO Database named 'notes_data' was created successful
+2023-07-19 01:44:22,412 INFO Connection with db-server is successful
+2023-07-19 01:44:22,412 INFO Table named 'notes_table' was dropped successful
+2023-07-19 01:44:22,432 INFO Connection with db-server is successful
+2023-07-19 01:44:22,433 INFO Table named 'notes_table' was created successful
+2023-07-19 01:44:22,453 INFO Connection with db-server is successful
+2023-07-19 01:44:22,455 INFO This table 'notes_table' doesn't exist
+2023-07-19 01:46:18,794 INFO Connection with db-server is successful
+2023-07-19 01:46:18,797 INFO Database named 'notes_data' was created successful
+2023-07-19 01:46:18,819 INFO Connection with db-server is successful
+2023-07-19 01:46:18,819 INFO Table named 'notes_table' was dropped successful
+2023-07-19 01:46:18,839 INFO Connection with db-server is successful
+2023-07-19 01:46:18,840 INFO Table named 'notes_table' was created successful
+2023-07-19 01:46:18,866 INFO Connection with db-server is successful
+2023-07-19 01:46:18,872 INFO This table 'notes_table' doesn't exist
+2023-07-19 01:48:58,084 ERROR 'CMySQLCursor' object is not subscriptable
+2023-07-19 01:48:58,085 ERROR 'NoneType' object has no attribute 'cursor'
+2023-07-19 01:48:58,105 ERROR 'CMySQLCursor' object is not subscriptable
+2023-07-19 01:48:58,106 ERROR 'NoneType' object has no attribute 'cursor'
+2023-07-19 01:48:58,126 ERROR 'CMySQLCursor' object is not subscriptable
+2023-07-19 01:48:58,126 INFO This table 'notes_table' exist
+2023-07-19 01:48:58,146 ERROR 'CMySQLCursor' object is not subscriptable
+2023-07-19 01:48:58,149 ERROR 'NoneType' object has no attribute 'cursor'
+2023-07-19 01:50:33,468 INFO Connection with db-server is successful
+2023-07-19 01:50:33,469 INFO Database named 'notes_data' was created successful
+2023-07-19 01:50:33,490 INFO Connection with db-server is successful
+2023-07-19 01:50:33,491 INFO Table named 'notes_table' was dropped successful
+2023-07-19 01:50:33,509 INFO Connection with db-server is successful
+2023-07-19 01:50:33,510 INFO Table named 'notes_table' was created successful
+2023-07-19 01:50:33,533 INFO Connection with db-server is successful
+2023-07-19 01:50:33,535 INFO This table 'notes_table' doesn't exist
+2023-07-19 01:55:19,765 ERROR CMySQLConnection.cmd_refresh() missing 1 required positional argument: 'options'
+2023-07-19 01:55:19,765 ERROR 'NoneType' object has no attribute 'cursor'
+2023-07-19 01:55:19,771 ERROR CMySQLConnection.cmd_refresh() missing 1 required positional argument: 'options'
+2023-07-19 01:55:19,771 INFO This table 'notes_table' doesn't exist
+2023-07-19 01:55:19,777 ERROR CMySQLConnection.cmd_refresh() missing 1 required positional argument: 'options'
+2023-07-19 01:55:19,777 ERROR 'NoneType' object has no attribute 'cursor'
+2023-07-19 01:55:19,782 ERROR CMySQLConnection.cmd_refresh() missing 1 required positional argument: 'options'
+2023-07-19 01:55:19,783 INFO This table 'notes_table' doesn't exist
+2023-07-19 01:55:58,592 INFO Connection with db-server is successful
+2023-07-19 01:55:58,594 INFO Database named 'notes_data' was created successful
+2023-07-19 01:55:58,615 INFO Connection with db-server is successful
+2023-07-19 01:55:58,616 INFO This table 'notes_table' exist
+2023-07-19 01:55:58,634 INFO Connection with db-server is successful
+2023-07-19 01:55:58,636 INFO Inserting into table 'notes_table' was successful
+2023-07-19 01:58:26,570 INFO Connection with db-server is successful
+2023-07-19 01:58:26,572 INFO Database named 'notes_data' was created successful
+2023-07-19 01:58:26,591 INFO Connection with db-server is successful
+2023-07-19 01:58:26,591 INFO This table 'notes_table' exist
+2023-07-19 01:58:26,612 INFO Connection with db-server is successful
+2023-07-19 01:58:26,618 INFO Inserting into table 'notes_table' was successful
+2023-07-19 01:59:30,774 INFO Connection with db-server is successful
+2023-07-19 01:59:30,775 INFO Database named 'notes_data' was created successful
+2023-07-19 01:59:30,797 INFO Connection with db-server is successful
+2023-07-19 01:59:30,797 INFO This table 'notes_table' exist
+2023-07-19 01:59:30,816 INFO Connection with db-server is successful
+2023-07-19 01:59:30,820 INFO Inserting into table 'notes_table' was successful
+2023-07-19 02:01:55,710 INFO Connection with db-server is successful
+2023-07-19 02:01:55,712 INFO Database named 'notes_data' was created successful
+2023-07-19 02:01:55,731 INFO Connection with db-server is successful
+2023-07-19 02:01:55,731 INFO This table 'notes_table' exist
+2023-07-19 02:01:55,755 INFO Connection with db-server is successful
+2023-07-19 02:01:55,758 ERROR Commands out of sync; you can't run this command now
+2023-07-19 02:02:38,145 INFO Connection with db-server is successful
+2023-07-19 02:02:38,147 INFO Database named 'notes_data' was created successful
+2023-07-19 02:02:38,168 INFO Connection with db-server is successful
+2023-07-19 02:02:38,168 INFO This table 'notes_table' exist
+2023-07-19 02:02:38,190 INFO Connection with db-server is successful
+2023-07-19 02:02:38,196 INFO Inserting into table 'notes_table' was successful
+2023-07-19 02:04:52,545 INFO Connection with db-server is successful
+2023-07-19 02:04:52,547 INFO Database named 'notes_data' was created successful
+2023-07-19 02:04:52,568 INFO Connection with db-server is successful
+2023-07-19 02:04:52,569 INFO This table 'notes_table' exist
+2023-07-19 02:04:52,591 INFO Connection with db-server is successful
+2023-07-19 02:04:52,592 INFO Inserting into table 'notes_table' was successful
+2023-07-19 02:05:17,660 INFO Connection with db-server is successful
+2023-07-19 02:05:17,660 INFO Database named 'notes_data' was created successful
+2023-07-19 02:05:17,761 INFO Connection with db-server is successful
+2023-07-19 02:05:17,761 INFO This table 'notes_table' exist
+2023-07-19 02:05:17,768 INFO Connection with db-server is successful
+2023-07-19 02:05:17,785 INFO Inserting into table 'notes_table' was successful
+2023-07-19 02:05:34,769 INFO Connection with db-server is successful
+2023-07-19 02:05:34,772 INFO Database named 'notes_data' was created successful
+2023-07-19 02:05:34,790 INFO Connection with db-server is successful
+2023-07-19 02:05:34,790 INFO This table 'notes_table' exist
+2023-07-19 02:05:34,809 INFO Connection with db-server is successful
+2023-07-19 02:05:34,813 INFO Inserting into table 'notes_table' was successful
+2023-07-19 02:08:30,277 INFO Connection with db-server is successful
+2023-07-19 02:08:30,279 INFO Database named 'notes_data' was created successful
+2023-07-19 02:08:30,299 INFO Connection with db-server is successful
+2023-07-19 02:08:30,300 INFO This table 'notes_table' exist
+2023-07-19 02:08:30,320 INFO Connection with db-server is successful
+2023-07-19 02:08:30,322 INFO Inserting into table 'notes_table' was successful
+2023-07-19 02:09:19,055 INFO Connection with db-server is successful
+2023-07-19 02:09:19,057 INFO Database named 'notes_data' was created successful
+2023-07-19 02:09:19,082 INFO Connection with db-server is successful
+2023-07-19 02:09:19,082 INFO This table 'notes_table' exist
+2023-07-19 02:09:19,104 INFO Connection with db-server is successful
+2023-07-19 02:09:19,108 INFO Inserting into table 'notes_table' was successful
+2023-07-19 02:10:34,898 INFO Connection with db-server is successful
+2023-07-19 02:10:34,901 INFO Database named 'notes_data' was created successful
+2023-07-19 02:10:34,922 INFO Connection with db-server is successful
+2023-07-19 02:10:34,922 INFO This table 'notes_table' exist
+2023-07-19 02:10:34,943 INFO Connection with db-server is successful
+2023-07-19 02:10:34,950 INFO Inserting into table 'notes_table' was successful
+2023-07-19 02:13:38,857 INFO Connection with db-server is successful
+2023-07-19 02:13:38,859 INFO Database named 'notes_data' was created successful
+2023-07-19 02:13:38,882 INFO Connection with db-server is successful
+2023-07-19 02:13:38,882 INFO This table 'notes_table' exist
+2023-07-19 02:13:38,903 INFO Connection with db-server is successful
+2023-07-19 02:13:38,908 INFO Inserting into table 'notes_table' was successful
+2023-07-19 02:14:46,438 INFO Connection with db-server is successful
+2023-07-19 02:14:46,441 INFO Database named 'notes_data' was created successful
+2023-07-19 02:14:46,463 INFO Connection with db-server is successful
+2023-07-19 02:14:46,463 INFO This table 'notes_table' exist
+2023-07-19 02:14:46,483 INFO Connection with db-server is successful
+2023-07-19 02:14:46,489 INFO Inserting into table 'notes_table' was successful
+2023-07-19 02:17:04,931 INFO Connection with db-server is successful
+2023-07-19 02:17:04,933 INFO Database named 'notes_data' was created successful
+2023-07-19 02:17:04,955 INFO Connection with db-server is successful
+2023-07-19 02:17:04,956 INFO This table 'notes_table' exist
+2023-07-19 02:17:04,977 INFO Connection with db-server is successful
+2023-07-19 02:17:04,981 INFO Inserting into table 'notes_table' was successful
+2023-07-19 02:17:08,157 INFO Connection with db-server is successful
+2023-07-19 02:17:08,159 INFO Database named 'notes_data' was created successful
+2023-07-19 02:17:08,179 INFO Connection with db-server is successful
+2023-07-19 02:17:08,179 INFO This table 'notes_table' exist
+2023-07-19 02:17:08,199 INFO Connection with db-server is successful
+2023-07-19 02:17:08,201 INFO Inserting into table 'notes_table' was successful
+2023-07-19 02:18:59,924 INFO Connection with db-server is successful
+2023-07-19 02:18:59,926 INFO Database named 'notes_data' was created successful
+2023-07-19 02:18:59,947 INFO Connection with db-server is successful
+2023-07-19 02:18:59,947 INFO This table 'notes_table' exist
+2023-07-19 02:18:59,969 INFO Connection with db-server is successful
+2023-07-19 02:18:59,974 ERROR Commands out of sync; you can't run this command now
+2023-07-19 02:24:57,076 INFO Connection with db-server is successful
+2023-07-19 02:24:57,079 INFO Database named 'notes_data' was created successful
+2023-07-19 02:24:57,100 INFO Connection with db-server is successful
+2023-07-19 02:24:57,100 INFO This table 'notes_table' exist
+2023-07-19 02:24:57,120 INFO Connection with db-server is successful
+2023-07-19 02:24:57,125 ERROR Commands out of sync; you can't run this command now
+2023-07-19 02:25:01,095 INFO Connection with db-server is successful
+2023-07-19 02:25:01,098 INFO Database named 'notes_data' was created successful
+2023-07-19 02:25:01,117 INFO Connection with db-server is successful
+2023-07-19 02:25:01,117 INFO This table 'notes_table' exist
+2023-07-19 02:25:01,140 INFO Connection with db-server is successful
+2023-07-19 02:25:01,144 ERROR Commands out of sync; you can't run this command now
+2023-07-19 02:25:18,506 INFO Connection with db-server is successful
+2023-07-19 02:25:18,508 INFO Database named 'notes_data' was created successful
+2023-07-19 02:25:18,528 INFO Connection with db-server is successful
+2023-07-19 02:25:18,529 INFO This table 'notes_table' exist
+2023-07-19 02:25:18,550 INFO Connection with db-server is successful
+2023-07-19 02:25:18,551 ERROR Commands out of sync; you can't run this command now
+2023-07-19 02:27:25,350 INFO Connection with db-server is successful
+2023-07-19 02:27:25,352 INFO Database named 'notes_data' was created successful
+2023-07-19 02:27:25,373 INFO Connection with db-server is successful
+2023-07-19 02:27:25,373 INFO This table 'notes_table' exist
+2023-07-19 02:27:25,394 INFO Connection with db-server is successful
+2023-07-19 02:27:25,395 INFO Inserting into table 'notes_table' was successful
+2023-07-19 02:29:51,077 INFO Connection with db-server is successful
+2023-07-19 02:29:51,079 INFO Database named 'notes_data' was created successful
+2023-07-19 02:29:51,099 INFO Connection with db-server is successful
+2023-07-19 02:29:51,099 INFO This table 'notes_table' exist
+2023-07-19 02:29:51,119 INFO Connection with db-server is successful
+2023-07-19 02:29:51,120 ERROR CMySQLCursor.executemany() missing 1 required positional argument: 'seq_params'
+2023-07-19 02:32:38,325 INFO Connection with db-server is successful
+2023-07-19 02:32:38,328 INFO Database named 'notes_data' was created successful
+2023-07-19 02:32:38,349 INFO Connection with db-server is successful
+2023-07-19 02:32:38,350 INFO This table 'notes_table' exist
+2023-07-19 02:32:38,371 INFO Connection with db-server is successful
+2023-07-19 02:32:38,371 ERROR CMySQLCursor.executemany() missing 1 required positional argument: 'seq_params'
+2023-07-19 02:32:49,849 INFO Connection with db-server is successful
+2023-07-19 02:32:49,851 INFO Database named 'notes_data' was created successful
+2023-07-19 02:32:49,872 INFO Connection with db-server is successful
+2023-07-19 02:32:49,872 INFO This table 'notes_table' exist
+2023-07-19 02:32:49,893 INFO Connection with db-server is successful
+2023-07-19 02:32:49,895 ERROR Commands out of sync; you can't run this command now
+2023-07-19 02:33:11,437 INFO Connection with db-server is successful
+2023-07-19 02:33:11,440 INFO Database named 'notes_data' was created successful
+2023-07-19 02:33:11,462 INFO Connection with db-server is successful
+2023-07-19 02:33:11,462 INFO This table 'notes_table' exist
+2023-07-19 02:33:11,481 INFO Connection with db-server is successful
+2023-07-19 02:33:11,481 ERROR Commands out of sync; you can't run this command now
+2023-07-19 02:35:25,398 INFO Connection with db-server is successful
+2023-07-19 02:35:25,400 INFO Database named 'notes_data' was created successful
+2023-07-19 02:35:25,422 INFO Connection with db-server is successful
+2023-07-19 02:35:25,422 INFO This table 'notes_table' exist
+2023-07-19 02:35:25,441 INFO Connection with db-server is successful
+2023-07-19 02:35:25,442 ERROR Commands out of sync; you can't run this command now
+2023-07-19 02:37:18,334 INFO Connection with db-server is successful
+2023-07-19 02:37:18,336 INFO Database named 'notes_data' was created successful
+2023-07-19 02:37:18,359 INFO Connection with db-server is successful
+2023-07-19 02:37:18,360 ERROR Commands out of sync; you can't run this command now

@@ -1,4 +1,4 @@
-import logging
+import tkinter as tk
 
-from Model.Logger import Logger
-
+window = tk.Tk()
+window.mainloop()
