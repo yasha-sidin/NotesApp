@@ -55,6 +55,7 @@ class DbModel():
             sql_command = f"CREATE DATABASE IF NOT EXISTS {name_of_db}"
             with connection.cursor() as cursor:
                 cursor.execute(sql_command)
+            connection.close()
             self._database = name_of_db
             self._logger.getlogger().info(f"Database named '{name_of_db}' was created successful")
         except Exception as e:
@@ -78,6 +79,7 @@ class DbModel():
                           f"COMMIT;"
             with connection.cursor() as cursor:
                 cursor.execute(sql_command)
+            connection.close()
             self._list_of_tables.append(table_name)
             self._logger.getlogger().info(f"Table named '{table_name}' was created successful")
         except Exception as e:
@@ -95,6 +97,7 @@ class DbModel():
                           f"COMMIT;"
             with connection.cursor() as cursor:
                 cursor.execute(sql_command)
+            connection.close()
             self._logger.getlogger().info(f"Table named '{table_name}' was dropped successful")
         except Exception as e:
             self._logger.getlogger().error(e)
@@ -111,8 +114,8 @@ class DbModel():
                           f"({note.getdate_of_creation()}, {note.getheader()}, {note.getbody()});"
             with connection.cursor() as cursor:
                 cursor.execute(sql_command)
-                connection.commit()
-                connection.close()
+            connection.commit()
+            connection.close()
             self._logger.getlogger().info(f"Inserting into table '{table_name}' was successful")
         except Exception as e:
             self._logger.getlogger().error(e)
