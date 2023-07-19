@@ -31,7 +31,7 @@ class DbModel():
         self._database = ""
         self._list_of_tables = []
 
-    def __init_connection(self):
+    def __init_connection_to_server(self):
         try:
             self._list_of_tables.clear()
             connection = mysql.connector.connect(host=self._host, user=self._user, password=self._password)
@@ -46,12 +46,28 @@ class DbModel():
         except Exception as e:
             self._logger.getlogger().error(e)
 
+    def __init_connection_to_db(self):
+        try:
+            self._list_of_tables.clear()
+            connection = mysql.connector.connect(host=self._host, user=self._user, password=self._password, database=self._database_name)
+            sql_command = f"SELECT * FROM INFORMATION_SCHEMA.TABLES "
+            with connection.cursor() as cursor:
+                cursor.execute(sql_command)
+                for row in cursor.fetchall():
+                    table_name = str(row[2])
+                    self._list_of_tables.append(table_name)
+            self._logger.getlogger().info("Connection with db-server is successful")
+            return connection
+        except Exception as e:
+            self._logger.getlogger().error(e)
+
+
     def setlogger(self, logger):
         self._logger = logger
 
     def create_db(self, name_of_db):
         try:
-            connection = self.__init_connection()
+            connection = self.__init_connection_to_server()
             sql_command = f"CREATE DATABASE IF NOT EXISTS {name_of_db}"
             with connection.cursor() as cursor:
                 cursor.execute(sql_command)
@@ -63,23 +79,21 @@ class DbModel():
 
     def create_table(self, table_name):
         try:
-            connection = self.__init_connection()
+            connection = self.__init_connection_to_db()
             if table_name in self._list_of_tables:
                 self._logger.getlogger().info(f"This table '{table_name}' exist")
                 return
             sql_command = f"USE {self._database};" \
-                          f"START TRANSACTION;" \
                           f"CREATE TABLE IF NOT EXISTS {table_name}(" \
                           f"id INT AUTO_INCREMENT PRIMARY KEY," \
                           f"date_of_creation VARCHAR(30) NOT NULL," \
                           f"date_of_last_update VARCHAR(30)," \
                           f"header VARCHAR(100) NOT NULL," \
                           f"body TEXT" \
-                          f");" \
-                          f"COMMIT;"
+                          f");
             with connection.cursor() as cursor:
                 cursor.execute(sql_command)
-            connection.close()
+                connection.commit()
             self._list_of_tables.append(table_name)
             self._logger.getlogger().info(f"Table named '{table_name}' was created successful")
         except Exception as e:
@@ -87,14 +101,11 @@ class DbModel():
 
     def drop_table(self, table_name):
         try:
-            connection = self.__init_connection()
+            connection = self.__init_connection_to_db()
             if table_name not in self._list_of_tables:
                 self._logger.getlogger().info(f"This table '{table_name}' doesn't exist")
                 return
-            sql_command = f"USE {self._database};" \
-                          f"START TRANSACTION;" \
-                          f"DROP TABLE {table_name}" \
-                          f"COMMIT;"
+            sql_command = f"DROP TABLE {table_name}" \
             with connection.cursor() as cursor:
                 cursor.execute(sql_command)
             connection.close()
