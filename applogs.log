@@ -919,3 +919,145 @@
 2023-07-20 05:49:50,496 INFO Database named 'notes_data' was created successful
 2023-07-20 05:49:50,603 INFO Connection with db-server is successful
 2023-07-20 05:49:50,603 INFO Select was successful
+2023-07-20 05:52:19,979 INFO Connection with db-server is successful
+2023-07-20 05:52:19,982 INFO Database named 'notes_data' was created successful
+2023-07-20 05:52:20,073 INFO Connection with db-server is successful
+2023-07-20 05:52:20,073 INFO Select was successful
+2023-07-20 05:52:48,699 INFO Connection with db-server is successful
+2023-07-20 05:52:48,701 INFO Database named 'notes_data' was created successful
+2023-07-20 05:52:48,798 INFO Connection with db-server is successful
+2023-07-20 05:52:48,799 INFO Select was successful
+2023-07-20 05:53:19,141 INFO Connection with db-server is successful
+2023-07-20 05:53:19,144 INFO Database named 'notes_data' was created successful
+2023-07-20 05:53:19,236 INFO Connection with db-server is successful
+2023-07-20 05:53:19,237 INFO Select was successful
+2023-07-20 10:59:38,960 INFO Connection with db-server is successful
+2023-07-20 10:59:38,964 INFO Database named 'notes_data' was created successful
+2023-07-20 10:59:39,780 INFO Connection with db-server is successful
+2023-07-20 10:59:39,782 INFO Select was successful
+2023-07-20 22:44:59,993 INFO Connection with db-server is successful
+2023-07-20 22:44:59,997 INFO Database named 'notes_data' was created successful
+2023-07-20 22:45:00,510 INFO Connection with db-server is successful
+2023-07-20 22:45:00,512 INFO Select was successful
+2023-07-20 22:45:21,792 INFO Connection with db-server is successful
+2023-07-20 22:45:21,795 INFO Database named 'notes_data' was created successful
+2023-07-20 22:45:21,882 INFO Connection with db-server is successful
+2023-07-20 22:45:21,884 INFO Select was successful
+2023-07-20 22:50:39,020 INFO Connection with db-server is successful
+2023-07-20 22:50:39,023 INFO Database named 'notes_data' was created successful
+2023-07-20 22:50:39,129 INFO Connection with db-server is successful
+2023-07-20 22:50:39,131 INFO Select was successful
+2023-07-20 22:53:11,526 INFO Connection with db-server is successful
+2023-07-20 22:53:11,529 INFO Database named 'notes_data' was created successful
+2023-07-20 22:53:11,624 INFO Connection with db-server is successful
+2023-07-20 22:53:11,625 INFO Select was successful
+2023-07-20 22:53:18,174 INFO Connection with db-server is successful
+2023-07-20 22:53:18,176 INFO Database named 'notes_data' was created successful
+2023-07-20 22:53:18,269 INFO Connection with db-server is successful
+2023-07-20 22:53:18,270 INFO Select was successful
+2023-07-20 22:53:33,604 INFO Connection with db-server is successful
+2023-07-20 22:53:33,606 INFO Database named 'notes_data' was created successful
+2023-07-20 22:53:33,713 INFO Connection with db-server is successful
+2023-07-20 22:53:33,714 INFO Select was successful
+2023-07-20 22:56:53,804 INFO Connection with db-server is successful
+2023-07-20 22:56:53,806 INFO Database named 'notes_data' was created successful
+2023-07-20 22:56:53,905 INFO Connection with db-server is successful
+2023-07-20 22:56:53,906 INFO Select was successful
+2023-07-20 23:01:10,074 INFO Connection with db-server is successful
+2023-07-20 23:01:10,076 INFO Database named 'notes_data' was created successful
+2023-07-20 23:01:10,175 INFO Connection with db-server is successful
+2023-07-20 23:01:10,177 INFO Select was successful
+2023-07-20 23:05:52,525 INFO Connection with db-server is successful
+2023-07-20 23:05:52,527 INFO Database named 'notes_data' was created successful
+2023-07-20 23:05:52,619 INFO Connection with db-server is successful
+2023-07-20 23:05:52,620 INFO Select was successful
+2023-07-20 23:11:24,793 INFO Connection with db-server is successful
+2023-07-20 23:11:24,796 INFO Database named 'notes_data' was created successful
+2023-07-20 23:11:24,891 INFO Connection with db-server is successful
+2023-07-20 23:11:24,892 INFO Select was successful
+2023-07-20 23:12:00,969 INFO Connection with db-server is successful
+2023-07-20 23:12:00,971 INFO Database named 'notes_data' was created successful
+2023-07-20 23:12:01,064 INFO Connection with db-server is successful
+2023-07-20 23:12:01,065 INFO Select was successful
+2023-07-20 23:12:47,477 INFO Connection with db-server is successful
+2023-07-20 23:12:47,479 INFO Database named 'notes_data' was created successful
+2023-07-20 23:12:47,566 INFO Connection with db-server is successful
+2023-07-20 23:12:47,568 INFO Select was successful
+2023-07-20 23:13:15,946 INFO Connection with db-server is successful
+2023-07-20 23:13:15,948 INFO Database named 'notes_data' was created successful
+2023-07-20 23:13:16,040 INFO Connection with db-server is successful
+2023-07-20 23:13:16,041 INFO Select was successful
+2023-07-20 23:14:41,658 INFO Connection with db-server is successful
+2023-07-20 23:14:41,661 INFO Database named 'notes_data' was created successful
+2023-07-20 23:14:41,755 INFO Connection with db-server is successful
+2023-07-20 23:14:41,756 INFO Select was successful
+2023-07-20 23:15:30,332 INFO Connection with db-server is successful
+2023-07-20 23:15:30,333 INFO Database named 'notes_data' was created successful
+2023-07-20 23:15:30,424 INFO Connection with db-server is successful
+2023-07-20 23:15:30,425 INFO Select was successful
+2023-07-20 23:28:52,326 INFO Connection with db-server is successful
+2023-07-20 23:28:52,329 INFO Database named 'notes_data' was created successful
+2023-07-20 23:28:52,424 INFO Connection with db-server is successful
+2023-07-20 23:28:52,425 INFO Select was successful
+2023-07-20 23:29:36,362 INFO Connection with db-server is successful
+2023-07-20 23:29:36,364 INFO Database named 'notes_data' was created successful
+2023-07-20 23:29:36,481 INFO Connection with db-server is successful
+2023-07-20 23:29:36,482 INFO Select was successful
+2023-07-20 23:42:07,067 INFO Connection with db-server is successful
+2023-07-20 23:42:07,070 INFO Database named 'notes_data' was created successful
+2023-07-20 23:42:07,171 INFO Connection with db-server is successful
+2023-07-20 23:42:07,172 INFO Select was successful
+2023-07-20 23:42:31,618 INFO Connection with db-server is successful
+2023-07-20 23:42:31,620 INFO Database named 'notes_data' was created successful
+2023-07-20 23:42:31,713 INFO Connection with db-server is successful
+2023-07-20 23:42:31,713 INFO Select was successful
+2023-07-20 23:44:57,688 INFO Connection with db-server is successful
+2023-07-20 23:44:57,690 INFO Database named 'notes_data' was created successful
+2023-07-20 23:44:57,788 INFO Connection with db-server is successful
+2023-07-20 23:44:57,789 INFO Select was successful
+2023-07-20 23:45:25,573 INFO Connection with db-server is successful
+2023-07-20 23:45:25,575 INFO Database named 'notes_data' was created successful
+2023-07-20 23:45:25,671 INFO Connection with db-server is successful
+2023-07-20 23:45:25,673 INFO Select was successful
+2023-07-20 23:46:00,339 INFO Connection with db-server is successful
+2023-07-20 23:46:00,341 INFO Database named 'notes_data' was created successful
+2023-07-20 23:46:00,443 INFO Connection with db-server is successful
+2023-07-20 23:46:00,444 INFO Select was successful
+2023-07-20 23:46:07,652 INFO Connection with db-server is successful
+2023-07-20 23:46:07,654 INFO Database named 'notes_data' was created successful
+2023-07-20 23:46:07,745 INFO Connection with db-server is successful
+2023-07-20 23:46:07,746 INFO Select was successful
+2023-07-20 23:46:17,146 INFO Connection with db-server is successful
+2023-07-20 23:46:17,148 INFO Database named 'notes_data' was created successful
+2023-07-20 23:46:17,245 INFO Connection with db-server is successful
+2023-07-20 23:46:17,246 INFO Select was successful
+2023-07-20 23:46:57,135 INFO Connection with db-server is successful
+2023-07-20 23:46:57,137 INFO Database named 'notes_data' was created successful
+2023-07-20 23:46:57,251 INFO Connection with db-server is successful
+2023-07-20 23:46:57,252 INFO Select was successful
+2023-07-20 23:51:16,379 INFO Connection with db-server is successful
+2023-07-20 23:51:16,382 INFO Database named 'notes_data' was created successful
+2023-07-20 23:51:16,476 INFO Connection with db-server is successful
+2023-07-20 23:51:16,477 INFO Select was successful
+2023-07-20 23:52:01,899 INFO Connection with db-server is successful
+2023-07-20 23:52:01,901 INFO Database named 'notes_data' was created successful
+2023-07-20 23:52:01,989 INFO Connection with db-server is successful
+2023-07-20 23:52:01,991 INFO Select was successful
+2023-07-20 23:53:51,148 INFO Connection with db-server is successful
+2023-07-20 23:53:51,151 INFO Database named 'notes_data' was created successful
+2023-07-20 23:53:51,250 INFO Connection with db-server is successful
+2023-07-20 23:53:51,252 INFO Select was successful
+2023-07-21 00:09:43,513 INFO Connection with db-server is successful
+2023-07-21 00:09:43,515 INFO Database named 'notes_data' was created successful
+2023-07-21 00:09:43,610 INFO Connection with db-server is successful
+2023-07-21 00:09:43,611 INFO Select was successful
+2023-07-21 00:10:01,612 INFO Connection with db-server is successful
+2023-07-21 00:10:01,614 INFO Database named 'notes_data' was created successful
+2023-07-21 00:10:01,709 INFO Connection with db-server is successful
+2023-07-21 00:10:01,711 INFO Select was successful
+2023-07-21 00:11:27,597 INFO Connection with db-server is successful
+2023-07-21 00:11:27,598 INFO Database named 'notes_data' was created successful
+2023-07-21 00:11:27,692 INFO Connection with db-server is successful
+2023-07-21 00:11:27,693 INFO Select was successful
+2023-07-21 00:39:07,982 INFO Connection with db-server is successful
+2023-07-21 00:39:07,984 INFO Database named 'notes_data' was created successful

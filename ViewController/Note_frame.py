@@ -18,7 +18,7 @@ class Note_frame():
         self._BUTTON_FONT = tkFont.Font(family="Times New Roman", size=14, weight="bold", slant="italic")
 
     def initialize(self):
-        master_frame = tk.Frame(master=self._master, height=600, width=600, bg="blue")
+        master_frame = tk.Frame(master=self._master, height=600, width=600, bg="#D5A8A0")
         master_frame.pack(fill=tk.BOTH, side=tk.LEFT, expand=True)
 
         text_frame = tk.Text(master=master_frame, bg="#D5A8A0")
