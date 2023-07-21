@@ -1,5 +1,6 @@
 import tkinter as tk
-from tkinter import *
+
+from tkinter import ttk
 import tkinter.font as tkFont
 from tkinter.messagebox import showinfo
 
@@ -17,8 +18,8 @@ class Data_frame():
 
     master = None
 
-    def __init__(self, master, db_model, table_name, note_frame):
-        self._note_frame = note_frame
+    def __init__(self, master, db_model, table_name):
+        # self._note_frame = note_frame
         self._db_model = db_model
         self._table_name = table_name
         self._master = master
@@ -29,17 +30,31 @@ class Data_frame():
 
     def initialize(self):
 
+        style = ttk.Style()
+        style.theme_use('alt')
+
+        style.configure(
+            "Vertical.TScrollbar",
+            gripcount=0,
+            background="#EBC8C1",
+            darkcolor="#EBC8C1",
+            lightcolor="#EBC8C1",
+            troughcolor="#EBC8C1",
+            bordercolor="#EBC8C1",
+            arrowcolor="#B27355"
+        )
+
         master_frame = tk.Frame(master=self._master, width=300, height=600, bg="#EBC8C1")
         master_frame.pack(fill=tk.BOTH, side=tk.LEFT, expand=True)
 
-        label = tk.Label(master=master_frame, text="Your notes", bg="#D5A8A0", width=26, height=2, font=self._LABEL_FONT)
+        label = tk.Label(master=master_frame, text="Your notes", bg="#D5A8A0", width=26, height=2, relief="ridge", font=self._LABEL_FONT)
         label.pack(fill=tk.BOTH, side=tk.TOP, expand=True, padx=6, pady=6, anchor=tk.N)
 
         list_box_frame = tk.Frame(master=master_frame, bg="#D5A8A0")
         list_box_frame.pack(fill=tk.BOTH, side=tk.TOP, expand=True, padx=6, pady=6, anchor=tk.N)
         self._listbox = tk.Listbox(master=list_box_frame, background="#F4DBD6", width=40, height=25, font=self._LISTBOX_FONT,
-                             highlightbackground="white",
-                             selectbackground="#FBEEE6", selectforeground="#E77A63", activestyle="underline", justify="left")
+                             highlightbackground="white", selectbackground="#FBEEE6", selectforeground="#E77A63",
+                             relief="ridge", activestyle="underline", justify="left")
 
         self.fill_list_box()
 
@@ -47,17 +62,22 @@ class Data_frame():
 
         self._listbox.pack(fill=tk.BOTH, side=tk.LEFT, padx=6, pady=6, expand=True)
 
-
-        scrollbar_vertical = tk.Scrollbar(master=list_box_frame, orient=tk.VERTICAL, command=self._listbox.yview)
+        scrollbar_vertical = ttk.Scrollbar(master=list_box_frame, orient=tk.VERTICAL, command=self._listbox.yview)
         scrollbar_vertical.pack(fill=tk.BOTH, side=tk.RIGHT)
 
-        button_frame = tk.Frame(master=master_frame, dg="#EBC8C1")
-        button_frame.pack(fill=tk.BOTH, side=tk.TOP, expand=True, padx=6, pady=6, anchor=tk.N)
+        button_frame = tk.Frame(master=master_frame, bg="#EBC8C1")
+        button_frame.pack(fill=tk.BOTH, side=tk.TOP, expand=True, padx=20, pady=6, anchor=tk.N)
 
-        button = tk.Button(master=button_frame, text="New note", font=self._BUTTON_FONT, background="#D5A8A0")
+        button = tk.Button(master=button_frame, text="New note", font=self._BUTTON_FONT, background="#D5A8A0",
+                           activebackground="#F4DBD6")
         button.pack(fill=tk.BOTH, side=tk.LEFT, padx=10, pady=6, expand=True)
 
-        button = tk.Button(master=button_frame, text="Choose note", font=self._BUTTON_FONT, background="#D5A8A0")
+        button = tk.Button(master=button_frame, text="Delete", font=self._BUTTON_FONT, background="#D5A8A0",
+                           activebackground="#F4DBD6")
+        button.pack(fill=tk.BOTH, side=tk.LEFT, padx=10, pady=6, expand=True)
+
+        button = tk.Button(master=button_frame, text="Choose note", font=self._BUTTON_FONT, background="#D5A8A0",
+                           activebackground="#F4DBD6")
         button.pack(fill=tk.BOTH, side=tk.LEFT, padx=10, pady=6, expand=True)
 
     def fill_list_box(self):

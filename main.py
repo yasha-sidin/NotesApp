@@ -33,7 +33,7 @@ db.init_db()
 window = tk.Tk()
 
 data_frame = Data_frame(window, db, "your_notes")
-note_frame = Note_frame(window, db, "your_notes", data_frame)
+note_frame = Note_frame(window, db, "your_notes")
 data_frame.initialize()
 note_frame.initialize()
 
