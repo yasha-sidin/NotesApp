@@ -68,10 +68,10 @@ class Db_model():
 
     def init_db(self):
         try:
+            connection = self.__init_connection_to_server()
             if self._database_name in self._list_of_databases:
                 self._logger.getlogger().info(f"This database '{self._database_name}' exist")
                 return
-            connection = self.__init_connection_to_server()
             sql_command = f"CREATE DATABASE IF NOT EXISTS {self._database_name};"
             with connection.cursor() as cursor:
                 cursor.execute(sql_command)
@@ -82,10 +82,11 @@ class Db_model():
 
     def create_table(self, table_name):
         try:
+            connection = self.__init_connection_to_server()
+            connection = self.__init_connection_to_db()
             if table_name in self._list_of_tables:
                 self._logger.getlogger().info(f"This table '{table_name}' exist")
                 return
-            connection = self.__init_connection_to_db()
             sql_command = f"CREATE TABLE IF NOT EXISTS {table_name}(" \
                           f"id INT AUTO_INCREMENT PRIMARY KEY," \
                           f"date_of_creation VARCHAR(30) NOT NULL," \

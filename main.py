@@ -12,6 +12,7 @@ logger = Logger("applogs")
 
 db = Db_model("localhost", "root", "131214", logger, "notes_data")
 db.init_db()
+db.create_table("new_notes")
 # db.create_table("your_notes")
 # # note1 = Note(0, "first", "Text some")
 # # note2 = Note(0, "second", "Text some")
@@ -31,11 +32,13 @@ db.init_db()
 # print(result)
 
 window = tk.Tk()
+window.minsize(width=1100, height=784)
 
-data_frame = Data_frame(window, db, "your_notes")
-note_frame = Note_frame(window, db, "your_notes")
+note_frame = Note_frame(window, db, "new_notes")
+data_frame = Data_frame(window, db, "new_notes", note_frame)
+
 data_frame.initialize()
-note_frame.initialize()
+
 
 window.mainloop()
 

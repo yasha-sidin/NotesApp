@@ -2,17 +2,23 @@ import tkinter as tk
 from tkinter import ttk
 import tkinter.font as tkFont
 
+from Model.Note import Note
+
+
 class Note_frame():
     LABEL_FONT = None
     LISTBOX_FONT = None
     BUTTON_FONT = None
     HEADER_FONT = None
 
-    note = None
+    current_note = None
 
     def __init__(self, master, db_model, table_name):
-        self._note = None
+        self._current_note = None
         self._master = master
+        self._textfield = tk.Text()
+        self._header_entry = tk.Entry()
+        self._string_var_header = tk.StringVar(master)
         self._LABEL_FONT = tkFont.Font(family="Arial", size=16, weight="bold", slant="italic")
         self._LISTBOX_FONT = tkFont.Font(family="Arial", size=14, slant="italic")
         self._BUTTON_FONT = tkFont.Font(family="Times New Roman", size=14, weight="bold", slant="italic")
@@ -39,18 +45,19 @@ class Note_frame():
         text_frame = tk.Frame(master=master_frame, bg="#EBC8C1")
         text_frame.pack(fill=tk.BOTH, side=tk.TOP, expand=True, padx=6, pady=6, anchor=tk.N)
 
-        header_entry = tk.Entry(master=text_frame, bg="#D5A8A0", font=self._HEADER_FONT, relief="ridge", justify=tk.CENTER)
-        header_entry.pack(fill=tk.X, side=tk.TOP, padx=6, pady=6, expand=True, anchor=tk.N)
+        self._header_entry = tk.Entry(master=text_frame, bg="#D5A8A0", font=self._HEADER_FONT, relief="ridge", justify=tk.CENTER,
+                                      textvariable=self._string_var_header)
+        self._header_entry.pack(fill=tk.X, side=tk.TOP, padx=6, pady=6, expand=True, anchor=tk.N)
 
         text_field_frame = tk.Frame(master=text_frame, bg="#D5A8A0")
         text_field_frame.pack(fill=tk.BOTH, side=tk.TOP, padx=6, pady=6, expand=True)
 
-        text_field = tk.Text(master=text_field_frame, relief="ridge", bg="#D5A8A0", background="#F4DBD6", height=26,
+        self._text_field = tk.Text(master=text_field_frame, relief="ridge", bg="#D5A8A0", background="#F4DBD6", height=26,
                              highlightbackground="white", selectbackground="#FBEEE6", selectforeground="#E77A63",
-                             padx=15, pady=15, font=self._LISTBOX_FONT, width=65)
-        text_field.pack(fill=tk.BOTH, side=tk.LEFT, padx=6, pady=6, expand=True)
+                             padx=15, pady=15, font=self._LISTBOX_FONT, width=65, undo=True)
+        self._text_field.pack(fill=tk.BOTH, side=tk.LEFT, padx=6, pady=6, expand=True)
 
-        scrollbar_vertical = ttk.Scrollbar(master=text_field_frame, orient=tk.VERTICAL, command=text_field.yview, cursor="arrow")
+        scrollbar_vertical = ttk.Scrollbar(master=text_field_frame, orient=tk.VERTICAL, command=self._text_field.yview, cursor="arrow")
         scrollbar_vertical.pack(fill=tk.BOTH, side=tk.RIGHT)
 
         button_frame = tk.Frame(master=master_frame, bg="#EBC8C1")
@@ -64,3 +71,20 @@ class Note_frame():
                            activebackground="#F4DBD6")
         button.pack(fill=tk.BOTH, side=tk.LEFT, padx=10, pady=6, expand=True)
 
+    def get_current_note(self):
+        return self._current_note
+
+    def set_note(self, note):
+        self._current_note = note
+
+        self._header_entry.delete(0, tk.END)
+        self._header_entry.insert(0, self._current_note.getheader())
+
+        self._textfield.delete(tk.END)
+        self._textfield.insert(tk.END, self._current_note.getbody())
+
+    def get_current_text(self):
+        return self._text_field.get("1.0", "end-1c")
+
+    def get_current_header(self):
+        return self._string_var_header.get()
