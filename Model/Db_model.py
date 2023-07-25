@@ -211,24 +211,42 @@ class Db_model():
         except Exception as e:
             self._logger.getlogger().error(e)
 
-        def get_note_by_id(self, table_name, id):
-            try:
-                note = None
-                if table_name not in self._list_of_tables:
-                    self._logger.getlogger().info(f"This table '{table_name}' doesn't exist")
-                    return
-                connection = self.__init_connection_to_db()
-                sql_command = f"SELECT * FROM WHERE id = {id};"
-                with connection.cursor() as cursor:
-                    cursor.execute(sql_command)
-                    result = cursor.fetchall()
-                    note = Note(result[0], result[3], result[4])
-                    note.setdate_of_last_update(row[2])
-                    connection.commit()
-                self._logger.getlogger().info(f"Limit select was successful")
-                return note
-            except Exception as e:
-                self._logger.getlogger().error(e)
+    def get_note_by_id(self, table_name, id):
+        try:
+            note = None
+            if table_name not in self._list_of_tables:
+                self._logger.getlogger().info(f"This table '{table_name}' doesn't exist")
+                return
+            connection = self.__init_connection_to_db()
+            sql_command = f"SELECT * FROM {table_name} WHERE id = {id};"
+            with connection.cursor() as cursor:
+                cursor.execute(sql_command)
+                result = cursor.fetchall()
+                note = Note(result[0][0], result[0][3], result[0][4])
+                note.setdate_of_last_update(result[0][2])
+                connection.commit()
+            self._logger.getlogger().info(f"Note with id '{result[0][0]}' was selected successful")
+            return note
+        except Exception as e:
+            self._logger.getlogger().error(e)
+
+    def get_last_id(self, table_name):
+        try:
+            id = 0
+            if table_name not in self._list_of_tables:
+                self._logger.getlogger().info(f"This table '{table_name}' doesn't exist")
+                return
+            connection = self.__init_connection_to_db()
+            sql_command = f"SELECT id FROM {table_name} ORDER BY id DESC LIMIT 1;"
+            with connection.cursor() as cursor:
+                cursor.execute(sql_command)
+                result = cursor.fetchall()
+                id = result[0][0]
+                connection.commit()
+            self._logger.getlogger().info(f"Last id was selected successful")
+            return id
+        except Exception as e:
+            self._logger.getlogger().error(e)
 
     host = property
     user = property
