@@ -13,26 +13,14 @@ from Model.Note import Note
 
 
 class Data_frame():
-    LABEL_FONT = None
-    LISTBOX_FONT = None
-    BUTTON_FONT = None
-
-    table_name = None
-
-    listbox = None
-
-    db_model = None
-
-    master = None
-
-    current_note = None
-
     def __init__(self, master, db_model, table_name, note_frame):
         self._note_frame = note_frame
         self._db_model = db_model
         self._table_name = table_name
         self._current_note = None
         self._master = master
+        self._string_var_start_date = tk.StringVar(master)
+        self._string_var_end_date = tk.StringVar(master)
         self._listbox = tk.Listbox()
         self._LABEL_FONT = tkFont.Font(family="Arial", size=16, weight="bold", slant="italic")
         self._LISTBOX_FONT = tkFont.Font(family="Arial", size=14, slant="italic")
@@ -66,12 +54,16 @@ class Data_frame():
         filter_frame.pack(fill=tk.BOTH, side=tk.TOP, expand=True, padx=6, pady=6, anchor=tk.N)
 
         start_date = (datetime.now() - relativedelta(years=1)).strftime("%Y-%m-%d %H:%M:%S")
-        start_date_entry = tk.Entry(master=filter_frame, bg="#D5A8A0", font=self._ENTRY_FONT, relief="ridge", justify=tk.LEFT)
+        start_date_entry = tk.Entry(master=filter_frame, bg="#D5A8A0", font=self._ENTRY_FONT, relief="ridge",
+                                    justify=tk.LEFT, textvariable=self._string_var_start_date)
         start_date_entry.pack(fill=tk.X, side=tk.LEFT, padx=6, pady=6, expand=True, anchor=tk.N)
         start_date_entry.insert(0, start_date)
 
-        end_date_entry = tk.Entry(master=filter_frame, bg="#D5A8A0", font=self._ENTRY_FONT, relief="ridge", justify=tk.LEFT)
+        end_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        end_date_entry = tk.Entry(master=filter_frame, bg="#D5A8A0", font=self._ENTRY_FONT, relief="ridge",
+                                  justify=tk.LEFT, textvariable=self._string_var_end_date)
         end_date_entry.pack(fill=tk.X, side=tk.LEFT, padx=6, pady=6, expand=True, anchor=tk.N)
+        end_date_entry.insert(0, end_date)
 
         list_box_frame = tk.Frame(master=master_frame, bg="#D5A8A0")
         list_box_frame.pack(fill=tk.BOTH, side=tk.TOP, expand=True, padx=6, pady=6, anchor=tk.N)
@@ -100,7 +92,7 @@ class Data_frame():
         button_delete.pack(fill=tk.BOTH, side=tk.LEFT, padx=10, pady=6, expand=True)
 
         button_filter = tk.Button(master=button_frame, text="Filter notes", font=self._BUTTON_FONT, background="#D5A8A0",
-                           activebackground="#F4DBD6")
+                           activebackground="#F4DBD6", command=self.__fill_list_box)
         button_filter.pack(fill=tk.BOTH, side=tk.LEFT, padx=10, pady=6, expand=True)
 
     def __check_saving(self):
@@ -110,10 +102,25 @@ class Data_frame():
 
     def __fill_list_box(self):
         if self._db_model.get_all_data(self._table_name):
-            var = tk.Variable(value=list(map(lambda x: str(x.getid()) + "  " + str(x.getheader()), self._db_model.get_all_data(self._table_name))))
-            self._listbox.config(listvariable=var)
+            try:
+                start_date = datetime.strptime(self._string_var_start_date.get(), "%Y-%m-%d %H:%M:%S")
+                end_date = datetime.strptime(self._string_var_end_date.get(), "%Y-%m-%d %H:%M:%S")
+                self.__to_listbox(start_date, end_date)
+            except Exception as e:
+                self._string_var_start_date.set((datetime.now() - relativedelta(years=1)).strftime("%Y-%m-%d %H:%M:%S"))
+                self._string_var_end_date.set(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+                start_date = datetime.strptime(self._string_var_start_date.get(), "%Y-%m-%d %H:%M:%S")
+                end_date = datetime.strptime(self._string_var_end_date.get(), "%Y-%m-%d %H:%M:%S")
+                self.__to_listbox(start_date, end_date)
         else:
             self._listbox.delete("0", tk.END)
+
+    def __to_listbox(self, start_date, end_date):
+        list_of_notes = self._db_model.get_all_data(self._table_name)
+        filter_list = [note for note in list_of_notes if
+        (start_date <= datetime.strptime(note.getdate_of_creation(), "%Y-%m-%d %H:%M:%S") <= end_date)]
+        var = tk.Variable(value=list(map(lambda x: str(x.getid()) + "  " + str(x.getheader()), filter_list)))
+        self._listbox.config(listvariable=var)
 
     def confirm_select_note(self, event):
         if (self._note_frame.check_initializing() == False and len(self._listbox.curselection()) != 0):
@@ -149,6 +156,8 @@ class Data_frame():
         self._db_model.insert_into_table(self._table_name, note)
         self._current_note = self._db_model.get_note_by_id(self._table_name, self._db_model.get_last_id(self._table_name))
         self._note_frame.set_note(self._current_note)
+
+        self._string_var_end_date.set((datetime.now() + relativedelta(minutes=1)).strftime("%Y-%m-%d %H:%M:%S"))
 
         self.__fill_list_box()
 
@@ -232,3 +241,15 @@ class Data_frame():
             self._current_note = self._db_model.get_note_by_id(self._table_name, id)
             self._note_frame.set_note(self._current_note)
 
+    note_frame = property
+    db_model = property
+    table_name = property
+    current_note = property
+    master = property
+    string_var_start_date = property
+    string_var_end_date = property
+    listbox = property
+    LABEL_FONT = property
+    LISTBOX_FONT = property
+    ENTRY_FONT = property
+    BUTTON_FONT = property

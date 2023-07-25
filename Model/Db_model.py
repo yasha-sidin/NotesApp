@@ -10,20 +10,6 @@ from Model.Note import Note
 
 
 class Db_model():
-    database_name = ""
-
-    list_of_databases = []
-
-    list_of_tables = []
-
-    host = ""
-
-    user = ""
-
-    password = ""
-
-    logger = Logger("")
-
     def __init__(self, host, user, password, logger, database_name):
         self._host = host
         self._user = user
@@ -181,6 +167,7 @@ class Db_model():
                 for row in result:
                     note = Note(row[0], row[3], row[4])
                     note.setdate_of_last_update(row[2])
+                    note.setdate_of_creation(row[1])
                     list_of_notes.append(note)
                 connection.commit()
             self._logger.getlogger().info(f"Select was successful")
@@ -204,6 +191,7 @@ class Db_model():
                 for row in result:
                     note = Note(row[0], row[3], row[4])
                     note.setdate_of_last_update(row[2])
+                    note.setdate_of_creation(row[1])
                     list_of_notes.append(note)
                 connection.commit()
             self._logger.getlogger().info(f"Limit select was successful")
@@ -224,6 +212,7 @@ class Db_model():
                 result = cursor.fetchall()
                 note = Note(result[0][0], result[0][3], result[0][4])
                 note.setdate_of_last_update(result[0][2])
+                note.setdate_of_creation(result[0][1])
                 connection.commit()
             self._logger.getlogger().info(f"Note with id '{result[0][0]}' was selected successful")
             return note

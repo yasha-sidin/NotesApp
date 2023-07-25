@@ -12,7 +12,7 @@ logger = Logger("applogs")
 
 db = Db_model("localhost", "root", "131214", logger, "notes_data")
 db.init_db()
-# db.drop_table("test_notes")
+db.drop_table("test_notes")
 db.create_table("test_notes")
 # db.create_table("your_notes")
 # # note1 = Note(0, "first", "Text some")

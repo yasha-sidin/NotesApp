@@ -1,12 +1,6 @@
 import datetime
 
 class Note():
-    id = 0
-    date_of_creation = ''
-    date_of_last_update = ''
-    header = 'dddd'
-    body = ''
-
     def __init__(self, id, header, body):
         self._header = header
         self._body = body
@@ -29,6 +23,9 @@ class Note():
     def setbody(self, body):
         self._body = body
 
+    def setdate_of_creation(self, date_of_creation):
+        self._date_of_creation = date_of_creation
+
     def getdate_of_creation(self):
         return self._date_of_creation
 
@@ -39,10 +36,10 @@ class Note():
         self._date_of_last_update = date
 
     def __str__(self):
-        return f"note: {{id: {self._id}, creation_date: {self._date_of_creation}, last_update: {self._date_of_last_update}, {self._header}}}"
+        return f"note: {{id: {self._id}, creation_date: {self._date_of_creation}, last_update: {self._date_of_last_update}, header: {self._header}}}"
 
     id = property(getid)
-    date_of_creation = property(getdate_of_creation)
+    date_of_creation = property(getdate_of_creation, setdate_of_creation)
     header = property(getheader, setheader)
     body = property(setbody, getbody)
     date_of_last_update = property(getdate_of_last_update, setdate_of_last_update)

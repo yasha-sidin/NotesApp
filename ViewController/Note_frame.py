@@ -5,13 +5,6 @@ import tkinter.font as tkFont
 from Model.Note import Note
 
 class Note_frame():
-    LABEL_FONT = None
-    LISTBOX_FONT = None
-    BUTTON_FONT = None
-    HEADER_FONT = None
-
-    current_note = None
-
     def __init__(self, master, db_model, table_name):
         self._master_frame = tk.Frame()
         self._is_initialize = False
@@ -48,7 +41,7 @@ class Note_frame():
         text_frame.pack(fill=tk.BOTH, side=tk.TOP, expand=True, padx=6, pady=6, anchor=tk.N)
 
         self._header_entry = tk.Entry(master=text_frame, bg="#D5A8A0", font=self._HEADER_FONT, relief="ridge", justify=tk.CENTER,
-                                      textvariable=self._string_var_header)
+                                      textvariable=self._string_var_header, selectbackground="#FBEEE6", selectforeground="#E77A63")
         self._header_entry.pack(fill=tk.X, side=tk.TOP, padx=6, pady=6, expand=True, anchor=tk.N)
 
         text_field_frame = tk.Frame(master=text_frame, bg="#D5A8A0")
@@ -114,3 +107,15 @@ class Note_frame():
         self._is_initialize = False
         self._master_frame.destroy()
 
+    master_frame = property
+    is_initialize = property
+    current_note = property
+    button_frame = property
+    master = property
+    textfield = property
+    header_entry = property
+    string_var_header = property
+    LABEL_FONT = property
+    LISTBOX_FONT = property
+    BUTTON_FONT = property
+    HEADER_FONT = property
