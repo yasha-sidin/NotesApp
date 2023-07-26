@@ -197,8 +197,8 @@ class Data_frame():
 
         string_var_for_entry_header = tk.StringVar(choose_header_and_text_window)
         header_name_entry = tk.Entry(master=choose_frame, bg="#D5A8A0", font=self._ENTRY_FONT, relief="ridge",
-                                     justify=tk.LEFT,
-                                     textvariable=string_var_for_entry_header)
+                                     justify=tk.LEFT, textvariable=string_var_for_entry_header,
+                                     selectbackground="#FBEEE6", selectforeground="#E77A63")
 
         header_name_entry.pack(fill=tk.X, side=tk.TOP, padx=6, pady=2, expand=True)
 
