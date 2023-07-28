@@ -6,7 +6,6 @@ from tkinter.messagebox import showinfo, showerror
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 from tkinter.messagebox import askyesno
-import tkinter.messagebox as mbox
 
 from Model.Note import Note
 
@@ -28,6 +27,7 @@ class Data_frame():
         self._BUTTON_FONT = tkFont.Font(family="Times New Roman", size=14, weight="bold", slant="italic")
 
     def initialize(self):
+        self._master.protocol("WM_DELETE_WINDOW", self.__on_closing)
 
         style = ttk.Style()
         style.theme_use('alt')
@@ -240,6 +240,13 @@ class Data_frame():
             id = int(first_note.split("  ")[0])
             self._current_note = self._db_model.get_note_by_id(self._table_name, id)
             self._note_frame.set_note(self._current_note)
+
+    def __on_closing(self):
+        if self.__check_saving():
+            self._master.destroy()
+        else:
+            msg = f'If you continue without saving, you will lose all progress on the current note. Shall we continue?'
+            self.confirm(msg, lambda: self._master.destroy())
 
     note_frame = property
     db_model = property

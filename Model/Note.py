@@ -36,7 +36,8 @@ class Note():
         self._date_of_last_update = date
 
     def __str__(self):
-        return f"note: {{id: {self._id}, creation_date: {self._date_of_creation}, last_update: {self._date_of_last_update}, header: {self._header}}}"
+        return f"note: {{id: {self._id}, creation_date: {self._date_of_creation}, last_update: " \
+               f"{self._date_of_last_update}, header: {self._header}}}"
 
     id = property(getid)
     date_of_creation = property(getdate_of_creation, setdate_of_creation)

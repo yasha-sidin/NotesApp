@@ -2,8 +2,6 @@ import tkinter as tk
 from tkinter import ttk
 import tkinter.font as tkFont
 
-from Model.Note import Note
-
 class Note_frame():
     def __init__(self, master, db_model, table_name):
         self._master_frame = tk.Frame()

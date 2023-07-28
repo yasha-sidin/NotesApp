@@ -1,13 +1,6 @@
 from datetime import datetime
-
 import mysql.connector
-import private as private
-import protected as protected
-
-from Model.Logger import Logger
-
 from Model.Note import Note
-
 
 class Db_model():
     def __init__(self, host, user, password, logger, database_name):
@@ -68,7 +61,6 @@ class Db_model():
 
     def create_table(self, table_name):
         try:
-            connection = self.__init_connection_to_server()
             connection = self.__init_connection_to_db()
             if table_name in self._list_of_tables:
                 self._logger.getlogger().info(f"This table '{table_name}' exist")

@@ -1,14 +1,14 @@
 import mysql
-
+import mysql.connector
 
 class Check_db_connection():
     def __init__(self, logger):
         self._logger = logger
         self._is_connect = False
 
-    def check_db_connection(self, login, passward):
+    def check_db_connection(self, login, password):
         try:
-            connection = mysql.connector.connect(host="localhost", user=login, password=passward)
+            connection = mysql.connector.connect(host="localhost", user=login, password=password)
             self._is_connect = True
             self._logger.getlogger().info("GOOD choice of connecting to database")
         except Exception as e:
