@@ -8,15 +8,16 @@ your notes and filter them by date of creation.
 You need to install theese tools before you run app(exaples of installation on windows):
 
 1. Python 3.11.4
-** https://www.python.org/
+    * https://www.python.org/
 
 2. Tkinter library for python
-** In command prompt: pip install tk
+    * In command prompt: pip install tk
 
-3. Datetime library for python
-** 
+3. Datetime and dateutil libraries for python
+    * In command prompt: pip install python-dateutil
 
-
+4. MySQL server
+    * https://dev.mysql.com/doc/refman/8.0/en/windows-installation.html
 
 ## Running
 
