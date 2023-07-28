@@ -1,15 +1,11 @@
 import tkinter as tk
-
 from tkinter import ttk
 import tkinter.font as tkFont
 from tkinter.messagebox import showinfo, showerror
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 from tkinter.messagebox import askyesno
-
 from Model.Note import Note
-
-
 
 class Data_frame():
     def __init__(self, master, db_model, table_name, note_frame):
