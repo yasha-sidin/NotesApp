@@ -19,9 +19,12 @@ You need to install theese tools before you run app(exaples of installation on w
 4. MySQL server
     * https://dev.mysql.com/doc/refman/8.0/en/windows-installation.html
 
+5. mysql library for python
+    * pip install mysql-connector-python
+
 ## Running
 
 You need to run main.py for working app.
 First of all you need to log in MySql.
 After that will be created database in MySql with name 
-"" and table "" in it. All your notes will be stored in database MySQL.
+"new_notes_big_data" and table "your_notes" in it. All your notes will be stored in database MySQL.
